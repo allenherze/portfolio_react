@@ -7,6 +7,18 @@ const PortfolioItem = ({ item }) => {
       <h3>{item.name}</h3>
       <img src={item.image} alt='project' />
       <p>{item.description}</p>
+      <div className='buttons'>
+        <a href={item.buttonLink?.[0]} target='_blank' className='btn' rel='noopener noreferrer'>
+          {item.button?.[0]}
+        </a>
+        {item.button?.[1] === '' ? (
+          ''
+        ) : (
+          <a href={item.buttonLink?.[1]} target='_blank' className='btn' rel='noopener noreferrer'>
+            {item.button?.[1]}
+          </a>
+        )}
+      </div>
     </div>
   );
 };

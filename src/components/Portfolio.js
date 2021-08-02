@@ -1,6 +1,9 @@
 import React from 'react';
 import PortfolioItem from './Portfolioitem';
-import imageOne from '../assets/p.jpg';
+import { Element } from 'react-scroll';
+import imageOne from '../assets/projects/activity.png';
+import imageTwo from '../assets/projects/quote.png';
+import imageThree from '../assets/projects/quiz.png';
 import '../App.css';
 
 const Portfolio = () => {
@@ -8,24 +11,38 @@ const Portfolio = () => {
     {
       id: 1,
       name: 'Activity Generator',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magni accusantium harum suscipit doloremque consequuntur quia? Iusto eaque ea molestiae commodi? Doloremque praesentium suscipit eius quas at quam ducimus nemo.',
+      description: 'Are you feeling bored, then have fun with this activity generator. Click on the red button to get the activity and do some cool stuff. ',
       image: imageOne,
+      button: ['View Github', 'Download the APK'],
+      buttonLink: ['https://github.com/allenherze/random_activity', 'https://facebook.com'],
     },
     {
       id: 2,
-      name: 'name2',
-      item: 'item2',
-      image: imageOne,
+      name: 'Random Quote Generator',
+      description: 'A website where you can get a random quote from an array and share it to Facebook and Twitter, also it has Dark mode integrated',
+      image: imageTwo,
+      button: ['View Github', 'Visit The Site'],
+      buttonLink: ['https://google.com'],
+    },
+    {
+      id: 3,
+      name: 'Quiz Time',
+      description: 'A single page app where you can answer questions for fun. The questions and the answers are being retrieved from the Open Trivia Database API',
+      image: imageThree,
+      button: ['View Github', ''],
+      buttonLink: ['https://google.com'],
     },
   ];
 
   return (
-    <div className='portfolio'>
-      <h2 className='portfolio-header'>Portfolio</h2>
-      {projects.map((item) => {
-        return <PortfolioItem key={item.id} item={item} />;
-      })}
-    </div>
+    <Element id='portfolio' name='portfolio'>
+      <div className='portfolio'>
+        <h2 className='portfolio-header'>Portfolio</h2>
+        {projects.map((item) => {
+          return <PortfolioItem key={item.id} item={item} />;
+        })}
+      </div>
+    </Element>
   );
 };
 

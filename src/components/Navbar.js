@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowCircleLeftIcon, BarsIcon } from 'react-line-awesome';
 import logo from '../logo.svg';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -36,10 +37,26 @@ const Navbar = () => {
         <li>
           <ArrowCircleLeftIcon className='arrow-icon' onClick={closeMenu} />
         </li>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Services</li>
-        <li>Contact</li>
+        <li>
+          <Link to='about' spy={true} smooth={true} duration={700} delay={400} onClick={closeMenu}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to='portfolio' spy={true} smooth={true} duration={700} delay={400} onClick={closeMenu}>
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link to='services' spy={true} smooth={true} duration={700} delay={400} onClick={closeMenu}>
+            Services
+          </Link>
+        </li>
+        <li>
+          <Link to='contact' spy={true} smooth={true} duration={700} delay={400} onClick={closeMenu}>
+            Contact
+          </Link>
+        </li>
       </ul>
     </>
   );

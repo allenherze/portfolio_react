@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
@@ -10,9 +11,10 @@ function App() {
     <div className='App'>
       <Navbar />
       <Hero />
-      <Portfolio />
-      <About />
       <Services />
+      <About />
+      <Portfolio />
+      <Footer />
     </div>
   );
 }

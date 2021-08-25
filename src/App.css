@@ -30,12 +30,17 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 /* Common Classes */
 
 .description,
 .service-description {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .portfolio-header,
@@ -105,6 +110,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
+  padding-bottom: 7.125rem;
   /* justify-content: center; */
 }
 
@@ -112,7 +118,7 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   font-size: 4rem;
-  padding-top: 9.125rem;
+  padding-top: 7.125rem;
   letter-spacing: 3px;
 }
 
@@ -137,6 +143,7 @@ body {
 }
 
 .arrow-down {
+  display: none;
   font-size: 2rem;
   justify-self: flex-end;
   padding-top: 8rem;
@@ -294,4 +301,43 @@ body {
 
 .service-description {
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-description p {
+  margin-bottom: 0.5rem;
+}
+
+.btn-contact {
+  width: 8.5rem;
+  padding: 0.8rem 1.2rem;
+  background: var(--primary-color);
+  color: var(--secondary-mobile);
+  border: none;
+  margin-top: 1.5rem;
+  align-self: center;
+}
+
+.footer {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /* margin: 0.5rem; */
+  padding: 1rem;
+}
+
+.footer span {
+  height: 100%;
+  padding: 1rem;
+  font-family: 'Open Sans';
+}
+
+.footer .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 2rem;
 }

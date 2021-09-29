@@ -5,7 +5,9 @@ const PortfolioItem = ({ item }) => {
   return (
     <div className='portfolio-item'>
       <h3>{item.name}</h3>
-      <img src={item.image} alt='project' />
+      <div className='portfolio-image'>
+        <img src={item.image} alt='project' />
+      </div>
       <p>{item.description}</p>
       <div className='buttons'>
         <a href={item.buttonLink?.[0]} target='_blank' className='btn' rel='noopener noreferrer'>

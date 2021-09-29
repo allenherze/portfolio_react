@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div className='navbar-wrapper'>
       <nav className='navbar'>
         <div>
           <img src={logo} alt='logo' className='logo' />
@@ -58,7 +58,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 

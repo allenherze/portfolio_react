@@ -32,7 +32,6 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--secondary-color);
 }
 
 /* Common Classes */
@@ -99,7 +98,9 @@ a {
 }
 
 .navmenu li .arrow-icon {
+  display: block;
   font-size: 2rem;
+  color: var(--primary-color);
 }
 
 /* Hero Styling */
@@ -203,6 +204,8 @@ a {
 .portfolio-item .portfolio-image {
   width: 100%;
   height: 100%;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .portfolio-item p {
@@ -292,6 +295,10 @@ a {
   border-radius: 0.5rem;
 }
 
+.btn-contact a {
+  color: var(--secondary-mobile);
+}
+
 .service-arrow-icon {
   display: none;
   color: var(--primary-color);
@@ -301,17 +308,15 @@ a {
   height: 100%;
   width: 100%;
   text-align: center;
-  /* margin: 0.5rem; */
-  padding: 1rem;
 }
 
 .footer span {
   display: inline-block;
   height: 100%;
   width: 100%;
-  padding: 0.5rem;
-  font-weight: 500;
+  font-weight: 800;
   font-family: 'Open Sans';
+  margin-bottom: 1rem;
 }
 
 .footer .social {
@@ -363,17 +368,6 @@ a {
     max-width: 600px;
   }
 
-  .services::before,
-  .services::after,
-  .portfolio::before,
-  .portfolio::after {
-    transform: skewY(-5deg);
-    -webkit-transform: skew(-5deg);
-    -moz-transform: skew(-5deg);
-    -o-transform: skew(-5deg);
-    -ms-transform: skew(-5deg);
-  }
-
   .description p,
   .service-description p {
     font-size: 1.3rem;
@@ -416,12 +410,13 @@ a {
   }
 
   .footer span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-self: center;
   }
 
   .footer .social {
     max-width: 600px;
+    font-size: 2.2rem;
   }
 
   .btn-contact {
@@ -539,17 +534,6 @@ a {
     text-align: right;
   }
 
-  .services::before,
-  .services::after,
-  .portfolio::before,
-  .portfolio::after {
-    transform: skewY(-5deg);
-    -webkit-transform: skew(-5deg);
-    -moz-transform: skew(-5deg);
-    -o-transform: skew(-5deg);
-    -ms-transform: skew(-5deg);
-  }
-
   .services {
     padding: 4rem;
   }
@@ -595,9 +579,21 @@ a {
     padding: 1.5rem 3rem;
   }
 
+  .footer {
+    height: 100%;
+  }
+
   .footer span {
     font-size: 1.4rem;
     margin-bottom: 1rem;
+  }
+
+  .footer .social {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0.5rem;
+    align-self: center;
+    font-size: 2.5rem;
   }
 }
 
@@ -657,6 +653,7 @@ a {
     font-size: 1.2rem;
     padding: 0.5rem;
   }
+
   .navmenu li .arrow-icon {
     display: none;
   }
@@ -786,17 +783,19 @@ a {
 
   .portfolio-item {
     display: grid;
-    grid-template-columns: 4fr 2fr;
-    gap: 2rem;
+    grid-template-columns: 4fr 3fr;
+    gap: 1rem;
     grid-template-areas:
       'a  b '
       'a  b'
       'd  b '
       'c  b ';
     align-items: start;
-    height: 100%;
+    height: auto;
+    max-height: 120%;
     max-width: 100%;
-    padding: 2rem;
+    padding: 4rem 2rem;
+    margin-bottom: 5rem;
   }
 
   .portfolio-item h3 {
@@ -815,10 +814,13 @@ a {
 
   .portfolio-image {
     grid-area: b;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .portfolio-item img {
-    transform: scale(1);
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .portfolio-item .btn {

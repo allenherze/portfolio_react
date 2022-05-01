@@ -5,6 +5,11 @@
   width: 100%;
 }
 
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
 .navlinks {
   display: flex;
   justify-content: space-evenly;
@@ -18,14 +23,15 @@
   font-size: 1.1rem;
 }
 
-.icon {
+.icon, .close {
   display: none;
 }
 
 
+
 @media only screen and (max-width:576px) {
   .navlinks {
-    transition: 1s;
+    transition: 800ms;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -46,13 +52,13 @@
   }
 
   .icon {
-    z-index: 2;
     display: inline-block;
     position: relative;
     color: var(--accent-color);
   }
 
-  .logo {
-    z-index: 2;
+  .close {
+    display: inline-block;
+    margin-top: 5rem;
   }
 }

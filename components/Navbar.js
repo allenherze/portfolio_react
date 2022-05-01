@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Menu from '../public/menu.svg';
+import Close from '../public/close.svg';
 import navbar from '../styles/Navbar.module.css';
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
   const [height, setHeight] = useState('0');
 
   const navOpen = () => {
@@ -16,18 +17,18 @@ export default function Navbar() {
   };
 
   const navClose = () => {
-    setOpen('0');
+    setHeight('0');
   };
 
   return (
     <nav className={navbar.container}>
       <Link href='/'>
         <div>
-          <Image alt='Joshua Coutinho Logo' className={navbar.logo} src='/vercel.svg' width={64} height={64} />{' '}
+          <Image alt='Joshua Coutinho Logo' className={navbar.logo} src='/logo.svg' width={64} height={64} />{' '}
         </div>
       </Link>
       <div className={navbar.icon} onClick={navOpen}>
-        <button onClick={navOpen}>Click</button>
+        <Image src={Menu} />
       </div>
       <div className={navbar.navlinks} style={menuDisplay}>
         <Link href='/about'>
@@ -43,6 +44,9 @@ export default function Navbar() {
         <p className={navbar.link} onClick={navClose}>
           Contact
         </p>
+        <div onClick={navClose} className={navbar.close}>
+          <Image src={Close} />
+        </div>
       </div>
     </nav>
   );

@@ -5,7 +5,7 @@ import CardData from '../pages/api/cards.json';
 const Card = () => {
   return CardData.Cards.map((card) => {
     return (
-      <Link href={`/projects/${card.slug}`}>
+      <Link href={`/projects/${card.slug}`} key={card.id}>
         <div className='p-10'>
           <div className='max-w-sm md:max-w-lg rounded overflow-hidden shadow-lg bg-white text-gray-700'>
             <div>

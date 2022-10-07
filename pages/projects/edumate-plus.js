@@ -29,8 +29,8 @@ const Edumate = () => {
             <p className='text-md'>My responsibilities as a designer was to redesign the website and the project duration was for 4 weeks while being involved the CEO of the company.</p>
           </section>
           {/* Overview End */}
-          <div class='relative flex py-5 items-center'>
-            <div class='flex-grow border-t border-gray-400'></div>
+          <div className='relative flex py-5 items-center'>
+            <div className='flex-grow border-t border-gray-400'></div>
           </div>
 
           <img src='/edumate2.png' alt='edumate-title' className='h-auto w-full p-10' />
@@ -42,8 +42,8 @@ const Edumate = () => {
             <p className='text-md mb-4'>The user goals were to ensure that new accounts are created with less hassle, and have a website with clear and easy to read sections.</p>
             {/* Problem end */}
           </section>
-          <div class='relative flex py-5 items-center'>
-            <div class='flex-grow border-t border-gray-400'></div>
+          <div className='relative flex py-5 items-center'>
+            <div className='flex-grow border-t border-gray-400'></div>
           </div>
           {/* {Border} */}
 

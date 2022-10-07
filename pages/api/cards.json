@@ -1,12 +1,14 @@
 {
   "Cards": [
     {
+      "id": 1,
       "title":"Edumate Plus",
       "tags": "Website Redesign",
       "coverImage": "/edumate.png",
       "slug": "edumate-plus"
     },
     {
+      "id": 2,
       "title":"Visual Crate",
       "tags": "Website Design and Development",
       "coverImage": "/visual.png",

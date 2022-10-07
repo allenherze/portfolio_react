@@ -1,0 +1,16 @@
+{
+  "Cards": [
+    {
+      "title":"Edumate Plus",
+      "tags": "Website Redesign",
+      "coverImage": "/edumate.png",
+      "slug": "edumate-plus"
+    },
+    {
+      "title":"Visual Crate",
+      "tags": "Website Design and Development",
+      "coverImage": "/visual.png",
+      "slug": "visual-crate"
+    }
+  ]
+}

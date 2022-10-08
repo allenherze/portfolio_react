@@ -61,13 +61,13 @@ const Edumate = () => {
             <p className='text-md mb-4'>When scrolling through the website there is a lack of distinction of a start and end point with the sections because of no whitespace. This makes the users a bit lost, because there no clear landmark as to where the section starts or ends, so the revised design ensures that the sections have whitespace and a clear distinction.</p>
           </section>
           {/* Design End */}
-          <div class='relative flex py-5 items-center'>
-            <div class='flex-grow border-t border-gray-400'></div>
+          <div className='relative flex py-5 items-center'>
+            <div className='flex-grow border-t border-gray-400'></div>
           </div>
           <h2 className='text-3xl mb-3 font-poppins'>Design System</h2>
           <img src='/edumate5.png' alt='edumate-title' className=' h-auto w-full p-10 rounded-3xl' />
-          <div class='relative flex py-5 items-center'>
-            <div class='flex-grow border-t border-gray-400'></div>
+          <div className='relative flex py-5 items-center'>
+            <div className='flex-grow border-t border-gray-400'></div>
           </div>
           {/* Results Start */}
           <section className='p-5'>

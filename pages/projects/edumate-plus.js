@@ -37,7 +37,7 @@ const Edumate = () => {
 
           {/* Problems start */}
           <section className='p-5'>
-            <h2 className='text-3xl mb-3 font-poppins'>Problems and Goals</h2>
+            <h2 className='text-3xl mb-3 font-poppins'>Problems Statement</h2>
             <p className='text-md mb-4'>The current design looked like if the template was used, also there were confusing call to actions which led to friction to the user creating an account. And the lack of whitespace was not providing a distinct start and end point to a section</p>
             <p className='text-md mb-4'>The user goals were to ensure that new accounts are created with less hassle, and have a website with clear and easy to read sections.</p>
             {/* Problem end */}

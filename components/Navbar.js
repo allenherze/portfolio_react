@@ -13,20 +13,26 @@ const Navbar = () => {
     <div className='m-auto w-full z-10 ease-in duration-300'>
       <div className='m-auto max-w-[1240px]  flex justify-between items-center p-4 '>
         <Link href='/'>
-          <h2 className='font-poppins mr-auto text-2xl'>Joshua Coutinho</h2>
+          <h2 className='font-kalam mr-auto text-2xl'>Joshua Coutinho</h2>
         </Link>
         <ul className='hidden sm:flex'>
           <li className='p-4'>
             <Link href='/#about'>About Me</Link>
           </li>
           <li className='p-4'>
-            <Link href='/#about'>Behance</Link>
+            <a href='https://www.behance.net/allenherze' target='_blank'>
+              Behance
+            </a>
           </li>
           <li className='p-4'>
-            <Link href='/#about'>Dribbble</Link>
+            <a href='https://dribbble.com/allenherze' target='_blank'>
+              Dribbble
+            </a>
           </li>
           <li className='p-4'>
-            <Link href='/#about'>Coding</Link>
+            <a href='https://github.com/allenherze' target='_blank'>
+              Github
+            </a>
           </li>
         </ul>
 

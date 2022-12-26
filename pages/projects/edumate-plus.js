@@ -15,7 +15,6 @@ const Edumate = () => {
         {/* Article Header start */}
         <div className='text-center m-5'>
           <h1 className='font-poppins text-4xl mb-4'>Edumate Plus</h1>
-          <span className='font-opensans text-md'>Website Redesign</span>
         </div>
         <img src='/edumate.png' alt='edumate-title' className='h-auto w-full p-10' />
         {/* Article Header End */}

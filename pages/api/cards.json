@@ -3,14 +3,14 @@
     {
       "id": 1,
       "title":"Edumate Plus",
-      "tags": "Website Redesign",
-      "coverImage": "/edumate.png",
+      "tags": "Redesigning an ed-tech website",
+      "coverImage": "/visual.png",
       "slug": "edumate-plus"
     },
     {
       "id": 2,
       "title":"Visual Crate",
-      "tags": "Website Design and Development",
+      "tags": "Designing and developing a portfolio website for an upcoming studio",
       "coverImage": "/visual.png",
       "slug": "visual-crate"
     }

@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
+import About from '../components/About';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -13,10 +15,16 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='flex flex-col h-screen justify-between'>
-        <Projects />
-        <Footer />
-      </div>
+      <motion.div exit={{ opacity: 0 }}>
+        <div className='flex flex-col h-auto justify-evenly'>
+          <div className='m-auto text-center font-poppins p-28'>
+            <h1 className='text-5xl mt-10 mb-5 font-bold'>Hi, I'm Joshua- a UI/UX designer</h1>
+            <span className='text-2xl font-light'>Utilizing creativity to create awesome designs with accessiblity in mind</span>
+          </div>
+          <Projects />
+          <Footer />
+        </div>
+      </motion.div>
     </div>
   );
 }

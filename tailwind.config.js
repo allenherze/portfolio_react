@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins'],
         'opensans': ['Open Sans'],
+        'kalam': ['Kalam'],
       },
     },
   },

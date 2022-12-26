@@ -20,17 +20,17 @@ const Navbar = () => {
             <Link href='/#about'>About Me</Link>
           </li>
           <li className='p-4'>
-            <a href='https://www.behance.net/allenherze' target='_blank'>
+            <a href='https://www.behance.net/allenherze' target='_blank' rel='noopener noreferrer'>
               Behance
             </a>
           </li>
           <li className='p-4'>
-            <a href='https://dribbble.com/allenherze' target='_blank'>
+            <a href='https://dribbble.com/allenherze' target='_blank' rel='noopener noreferrer'>
               Dribbble
             </a>
           </li>
           <li className='p-4'>
-            <a href='https://github.com/allenherze' target='_blank'>
+            <a href='https://github.com/allenherze' target='_blank' rel='noopener noreferrer'>
               Github
             </a>
           </li>

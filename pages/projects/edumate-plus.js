@@ -11,9 +11,9 @@ const Edumate = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <article className='mx-auto flex flex-col justify-center p-20' style={{ maxWidth: '1140px' }}>
+      <article className='mx-auto flex flex-col justify-center md:p-20' style={{ maxWidth: '1140px' }}>
         {/* Article Header start */}
-        <div className='text-center m-5'>
+        <div className='text-center mt-12'>
           <h1 className='font-poppins text-4xl mb-4'>Edumate Plus</h1>
         </div>
         <img src='/edumate.png' alt='edumate-title' className='h-auto w-full p-10' />

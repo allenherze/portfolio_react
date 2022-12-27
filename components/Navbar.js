@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='m-auto w-full z-10 ease-in duration-300'>
       <div className='m-auto max-w-[1240px]  flex justify-between items-center p-4 '>
         <Link href='/'>
-          <h2 className='font-kalam mr-auto text-2xl'>Joshua Coutinho</h2>
+          <h2 className='font-kalam mr-auto text-2xl mt-2'>Joshua Coutinho</h2>
         </Link>
         <ul className='hidden sm:flex'>
           <li className='p-4'>

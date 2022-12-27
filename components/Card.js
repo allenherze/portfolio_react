@@ -21,16 +21,16 @@ const Card = () => {
             </div>
           </div>
         </div> */}
-        <div className='grid grid-cols-2 p-12 gap-10'>
-          <div className='w-auto h-auto '>
+        <div className='grid md:grid-cols-2 md:p-12 py-10 gap-10'>
+          <div className='w-auto h-auto'>
             <img src={card.coverImage} alt={card.coverImage} className='rounded-lg' />
           </div>
           <div className='flex flex-col justify-center align-center'>
             <div className='px-6 pt-4 pb-2'>
-              <h2 className='font-poppins font-semibold text-4xl'>{card.title}</h2>
+              <h2 className='font-poppins font-semibold md:text-4xl text-2xl'>{card.title}</h2>
             </div>
             <div className='px-6 pb-2 flex flex-col justify-evenly align-center'>
-              <span className='font-opensans text-xl py-5 mb-5'>{card.tags}</span>
+              <span className='font-opensans md:text-xl md:py-5 py-2 md:mb-5'>{card.tags}</span>
               <Link href={`/projects/${card.slug}`} key={card.id} class>
                 <button className='mt-5 w-2/4 bg-transparent text-purple-700 font-semibold py-4 px-4 border border-purple-500 rounded-full text-xl'>Read More</button>
               </Link>

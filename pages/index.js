@@ -16,10 +16,10 @@ export default function Home() {
       </Head>
 
       <motion.div exit={{ opacity: 0 }}>
-        <div className='flex flex-col h-auto justify-evenly'>
-          <div className='m-auto text-center font-poppins p-28'>
-            <h1 className='text-5xl mt-10 mb-5 font-bold'>Hi, I&apos;m Joshua- a UI/UX designer</h1>
-            <span className='text-2xl font-light'>Utilizing creativity to create awesome designs with accessiblity in mind</span>
+        <div className='flex flex-col h-auto justify-evenly align-center'>
+          <div className='m-auto text-center font-poppins md:p-28 p-5'>
+            <h1 className='md:text-5xl text-2xl mt-10 mb-5 font-bold'>Hi, I&apos;m Joshua- a UI/UX designer</h1>
+            <span className='md:text-2xl font-light'>Utilizing creativity to create awesome designs with accessiblity in mind</span>
           </div>
           <Projects />
           <Footer />
